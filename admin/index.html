@@ -1,1 +1,44 @@
-[admin index.html contents here]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Posterr Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎛️ Posterr Admin Panel</h1>
+
+  <section>
+    <h2>Jellyfin Settings</h2>
+    <input type="text" id="server" placeholder="Jellyfin Server URL" />
+    <input type="text" id="userId" placeholder="User ID" />
+    <input type="password" id="apiKey" placeholder="API Key" />
+    <button onclick="saveConfig()">Save Config</button>
+    <button onclick="testConnection()">Test Connection</button>
+    <p id="connectionResult"></p>
+  </section>
+
+  <section>
+    <h2>Display Settings</h2>
+    <label>Dimming Start Time <input type="time" id="dimStart" /></label>
+    <label>Dimming End Time <input type="time" id="dimEnd" /></label>
+    <label><input type="checkbox" id="enableGrain" /> Enable Film Grain</label>
+  </section>
+
+  <section>
+    <h2>Theme Manager</h2>
+    <select id="themeSelector"></select>
+    <button onclick="loadTheme()">Load</button>
+    <button onclick="applyTheme()">Apply</button>
+    <button onclick="deleteTheme()">Delete</button>
+    <button onclick="createTheme()">Create New</button>
+    <textarea id="cssEditor" placeholder="Edit CSS here..."></textarea>
+    <button onclick="saveTheme()">Save Theme</button>
+    <div id="previewFrame">
+      <iframe id="themePreview" src="/frontend/index.html"></iframe>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
