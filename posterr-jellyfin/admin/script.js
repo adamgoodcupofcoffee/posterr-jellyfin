@@ -1,0 +1,1 @@
+[admin script.js contents here]
