@@ -1,1 +1,43 @@
-[style.css contents here]
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.poster-container img {
+  max-height: 80vh;
+  max-width: 90vw;
+  object-fit: contain;
+}
+
+#progress {
+  width: 80%;
+  height: 10px;
+  background: #444;
+  margin: 0 auto 1rem auto;
+}
+
+#metadata {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1rem auto;
+}
+
+.badge, .pill {
+  border: 1px solid white;
+  border-radius: 1em;
+  padding: 0.2em 0.6em;
+}
+
+#qr img {
+  margin-top: 1em;
+}
