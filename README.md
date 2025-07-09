@@ -17,6 +17,6 @@ A beautiful full-screen digital poster for Jellyfin, running in Docker.
 ### Docker Desktop (Quick Start)
 
 ```bash
-git clone https://github.com/YOUR_NAME/posterr-jellyfin.git
+git clone https://github.com/adamgoodcupofcoffee/posterr-jellyfin.git
 cd posterr-jellyfin
 docker-compose up -d
