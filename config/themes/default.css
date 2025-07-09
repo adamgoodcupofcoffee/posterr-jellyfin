@@ -1,1 +1,89 @@
-[default.css contents here]
+body {
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#header {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  letter-spacing: 1px;
+}
+
+.poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.poster-container img {
+  max-height: 78vh;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.1);
+}
+
+#progress {
+  width: 80%;
+  height: 10px;
+  margin: 0.5rem auto;
+  background-color: #444;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+#progress::after {
+  content: "";
+  display: block;
+  width: 45%; /* placeholder for demo */
+  height: 100%;
+  background-color: limegreen;
+  animation: grow 60s linear infinite;
+}
+
+@keyframes grow {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+#metadata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.badge, .pill {
+  padding: 0.4em 0.7em;
+  border-radius: 1em;
+  font-weight: bold;
+}
+
+.badge {
+  border: 2px solid white;
+}
+
+.pill {
+  background-color: white;
+  color: black;
+}
+
+#qr img {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 80px;
+  height: 80px;
+}
