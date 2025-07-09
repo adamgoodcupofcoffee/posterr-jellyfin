@@ -1,0 +1,9 @@
+{
+  "server": "",
+  "apiKey": "",
+  "userId": "",
+  "dimStart": "01:00",
+  "dimEnd": "10:00",
+  "enableGrain": true,
+  "theme": "default.css"
+}
